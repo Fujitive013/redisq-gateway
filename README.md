@@ -2,11 +2,9 @@
 
 Express gateway for payment webhooks. It accepts payment events, enqueues receipt jobs with BullMQ/Redis, and a background worker stores transactions in Supabase and sends email through Elastic Email.
 
-This README is focused on local development (localhost only).
-
 ## Visualization
 
-Illustrates the full request flow, from Postman into the web service, through Redis/BullMQ, and then into the worker that triggers Elastic Email and writes to Supabase.
+Illustrates the full request flow, from Postman into the web service, through Redis/BullMQ, and then into the worker that triggers Elastic Email and writes to Supabase. Visualization created with Google Gemini.
 
 ![RedisQ visualization](backend/assets/RedisQ%20Visual.gif)
 
