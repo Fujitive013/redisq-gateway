@@ -6,7 +6,7 @@ This README is focused on local development (localhost only).
 
 ## Visualization
 
-Shows exactly how the JSON payload moves from Postman, through your Render Web Service, into the Redis queue, and finally gets processed by your background worker to hit the Elastic Email and Supabase APIs.
+Illustrates the full request flow, from Postman into the web service, through Redis/BullMQ, and then into the worker that triggers Elastic Email and writes to Supabase.
 
 ![RedisQ visualization](backend/assets/RedisQ%20Visual.gif)
 
