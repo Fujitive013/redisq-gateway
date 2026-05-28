@@ -4,6 +4,12 @@ Express gateway for payment webhooks. It accepts payment events, enqueues receip
 
 This README is focused on local development (localhost only).
 
+## Visualization
+
+Shows exactly how the JSON payload moves from Postman, through your Render Web Service, into the Redis queue, and finally gets processed by your background worker to hit the Elastic Email and Supabase APIs.
+
+<video src="backend/assets/RedisQ%20Visual.mp4" width="640" controls></video>
+
 ## Quick Start (Local)
 
 1. Start Redis
